@@ -1,12 +1,28 @@
-import styles from '../styles/index.module.css'
-import { Button } from '@mantine/core';
+import { AppShell, Burger } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 import Sidebar from '../components/sideBar';
 import LandingPage from '../components/landingPage';
 
-
 export default function Home() {
-    return (
-      <LandingPage/>
-    );
-  }
-  
+  const [opened, { toggle }] = useDisclosure(false);
+
+  return (
+    <AppShell
+      navbar={{
+        width: 230,
+        breakpoint: 'md',
+        collapsed: { mobile: !opened },
+        
+      }}
+    >
+
+      <AppShell.Navbar>
+        <Sidebar />
+      </AppShell.Navbar>
+
+      <AppShell.Main>
+        <LandingPage />
+      </AppShell.Main>
+    </AppShell>
+  );
+}

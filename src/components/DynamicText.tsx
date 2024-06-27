@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const roles = [
-  "Front-end Developer",
-  "UI/UX Designer",
-  "Web Developer"
+  "Cyberpsycho",
+  "Edgerunner",
+  "Sandesvistan"
 ];
 
 const DynamicText = () => {
