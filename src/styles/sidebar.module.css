@@ -1,0 +1,19 @@
+.buttonMenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .button-menu:hover {
+    background-color: transparent;
+    color: white;
+  }
+
+  .navbar{
+    background-color: #040b14;
+    
+  }
+  
